@@ -1,0 +1,6 @@
+@M1sterPl0w.WhereDidIGo_HostAddress = http://localhost:5047
+
+GET {{M1sterPl0w.WhereDidIGo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
