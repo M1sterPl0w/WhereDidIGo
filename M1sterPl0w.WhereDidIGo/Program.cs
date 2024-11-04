@@ -1,3 +1,4 @@
+using M1sterPl0w.WhereDidIGo.Services;
 using Microsoft.AspNetCore.Http.Features;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,6 +19,8 @@ builder.Services.Configure<FormOptions>(options =>
 {
     options.MultipartBodyLengthLimit = 300 * 1024 * 1024; // Set to 300 MB for multipart forms
 });
+
+builder.Services.AddScoped<IFitService, FitService>();
 
 var app = builder.Build();
 
